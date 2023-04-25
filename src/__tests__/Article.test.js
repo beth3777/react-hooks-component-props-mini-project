@@ -62,3 +62,14 @@ test("renders a <p> with the preview text", () => {
   expect(p).toBeInTheDocument();
   expect(p.tagName).toBe("P");
 });
+
+const Article=(props)=>{
+  return(
+    <article>
+      <h3>{props.title}</h3>
+      <small>{props.date||"january 1,1970"}</small>
+      <p>{props.preview}</p>
+    </article>
+  )
+}
+export default Article

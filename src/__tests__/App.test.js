@@ -9,3 +9,7 @@ test("renders the correct child components", () => {
   expect(container.querySelector(".App aside")).toBeInTheDocument();
   expect(container.querySelector(".App main")).toBeInTheDocument();
 });
+import {Header}from "./Header.test"
+import{ArticleLIst}from"./ArticleList.test"
+import {About}from"./About.test"
+import {Article}from"./Article.test"

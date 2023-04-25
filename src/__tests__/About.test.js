@@ -27,3 +27,12 @@ test("renders a <p> with the about text", () => {
   expect(p).toBeInTheDocument();
   expect(p.tagName).toBe("P");
 });
+import React from "react"
+const About=(props)=>{
+  returns (
+    <aside>
+      <img src={"https://via.placeholder.com/215"}alt="blog logo"/>
+    </aside>
+  )
+}
+export default About
